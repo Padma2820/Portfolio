@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Inter&family=Lato&family=Noto+Sans:wght@500&family=Roboto:wght@500&family=Rubik&display=swap');
+
+
+body {
+    background-color: rgb(103, 95, 95);
+    text-align: center;
+}
+
+
+
+
+.navbar-brand{
+    color: white;
+    font-size: 40px;
+    font-family:cursive;
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item ::after {
+    content: ' ';
+    position: absolute;
+    background-color: brown;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-item :hover::after {
+    width: 100%;
+}
+
+.nav-item {
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+.col-lg-6 .text{
+    margin-top: 20%;
+    color: white;
+    font-size: 3.5rem;
+    
+    
+}
+.text span{
+    color: rgb(201, 148, 83);
+    
+}
+
+.text-p{
+    font-size: 1.6rem;
+    color: wheat;
+    padding: 5px 0;
+}
+
+
+.col-lg-6 img{
+    height: 70%;
+    width: 70%;
+    margin-top: 25%;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+
+
+
+#about {
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.col-lg-6 .second-img{
+    border-radius: 20px;
+    height: 400px;
+    width: 250px;
+    justify-content: center;
+}
+
+
+
+.about-col-1 {
+  flex-basis: 35%;
+
+}
+
+
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.col-lg-6 .title {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #152b15;
+    margin-top: 15%;
+    
+}
+.col-lg-6 .about{
+    font-size: 20px;
+    padding: 10px 2px;
+}
+
+.about-subtitles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.title-class {
+    text-align: center;
+    padding: 2%;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.title-class::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.title-class.active-link::after {
+    width: 100%;
+}
+
+.about-content ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 5px 0;
+    color: rgb(241, 218, 15);
+}
+
+.about-content {
+    display: none;
+}
+
+.about-content.active-tab {
+    display: block;
+}
+
+#service {
+    padding: 30px 0;
+    color: white;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.services-list div {
+    background-color: rgb(86, 80, 80);
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 40px;
+    margin-bottom: 20px;
+   
+}
+.services-list div h2{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: rgb(184, 142, 100);
+    transform: translateY(-10px);
+}
+
+#portfolio{
+
+    padding: 30px 0;
+    color: white;
+}
+.tindog{
+    height: 72vh;
+    width: 10vw;
+}
+.calculator{
+    height: 70vh;
+    width: 10vw;
+}
+.game1{
+    height: 70vh;
+    width: 10vw;
+}
+.game2{
+    height: 70vh;
+    width: 10vw;
+    margin-right: 150px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 40px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    padding: 5%;
+    position: sticky;
+    object-fit: cover;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(113, 60, 60));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.layer a{
+    
+    margin-top: 30px;
+    color: wheat;
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+.layer a i{
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+    text-decoration: none;
+    color: wheat;
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: rgb(209, 23, 112);
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 65%;
+}
+#contact .col-lg-6 h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+#contact .col-lg-6 p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(221, 182, 108);
+}
+#contact .col-lg-6 p i{
+    margin-right: 20px;
+    color: white;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+    color: antiquewhite;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a .fa-linkedin:hover{
+    color: rgb(105, 105, 155);
+    transform: translateY(-3px);
+}
+.social-icons a .fa-instagram:hover{
+    color: deeppink;
+    transform: translateY(-3px);
+}
+
+.btn.new-btn{
+    display: inline-block;
+    background-color: rgb(89, 136, 150);
+    color: wheat;
+    font-weight: 900;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(193, 187, 178);
+    padding: 15px;
+    margin: 15px 0;
+    color: wheat;
+    border-radius: 5px;
+}
+form .new-btn{
+    padding: 10px 60px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+nav .fa-solid{
+    display: none;
+}
+/*@media  only screen and(max-width:730px){
+    /*.header-text{
+        margin-top: 100%;
+        font-size: 1.5rem;
+    }
+    .header-text h1{
+        
+       font-size: 20px;
+       
+    }
+    /*.header-text h1 span{
+        white-space: pre-line;
+    }*/
+    /*.header-col-1,.header-col-2{
+       flex-basis: 100%;
+    }*/
+    /*nav .fa-solid{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 35px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+   
+    /*.title{
+        font-size: 3rem;
+    }
+    .about-col-1{
+        margin-bottom: 20px;
+    }
+    /*.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 60px;
+    margin-top: 40px;
+    }
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .about-col-1 img {
+        width: 40%;
+        border-radius: 50px;
+        
+    
+    }
+    .title-class{
+margin-right: 40px;
+    }
+    
+    /*.header-col-2 img{
+        padding: 30px 0;
+
+    }
+    .col-lg-6 .about-col-1,.col-lg-6 .about-col-2{
+        flex-basis: 100%;
+
+    }
+    .col-lg-6 .second-img{
+       flex-basis: 100%;
+    }
+}*/
